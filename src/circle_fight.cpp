@@ -159,7 +159,7 @@ public:
         walls.clear();
         
         tmx::Map map;
-        string mapFilename = "level" + to_string(levelNum) + ".tmx";
+        string mapFilename = "../assets/maps/level" + to_string(levelNum) + ".tmx";
         
         if (map.load(mapFilename)) {
             const auto& layers = map.getLayers();
@@ -255,7 +255,7 @@ public:
              state(MENU), currentLevel(1), maxLevel(3) {
         window.setFramerateLimit(60);
         
-        if (!font.loadFromFile("BitcountSingle_Roman-Regular.ttf")) {
+        if (!font.loadFromFile("../assets/fonts/BitcountSingle_Roman-Regular.ttf")) {
             font.loadFromFile("C:/Windows/Fonts/arial.ttf"); 
         }
         

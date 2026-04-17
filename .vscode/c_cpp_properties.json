@@ -4,8 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:\\Libraries and Tools\\SFML\\include",
-                "${workspaceFolder}\\tmxlite\\include"
+                "D:/Libraries and Tools/SFML/include",
+                "${workspaceFolder}/vendor/tmxlite/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -13,10 +13,11 @@
                 "_UNICODE",
                 "TMXLITE_STATIC"
             ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "D:/Libraries and Tools/winlibs/mingw64MSVCRT/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-gcc-x64",
-            "compilerPath": "D:/Libraries and Tools/winlibs/mingw64MSVCRT/bin/g++.exe"
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4

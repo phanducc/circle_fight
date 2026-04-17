@@ -1,27 +1,28 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "Build Game C++",
-            "command": "D:\\Libraries and Tools\\winlibs\\mingw64MSVCRT\\bin\\g++.exe",
+            "label": "Build Circle Fight Game",
+            "command": "D:/Libraries and Tools/winlibs/mingw64MSVCRT/bin/g++.exe",
             "args": [
                 "-g",
-                "${workspaceFolder}\\*.cpp",
-                "${workspaceFolder}\\tmxlite\\src\\*.cpp",
-                "${workspaceFolder}\\tmxlite\\src\\*.c",
-                "${workspaceFolder}\\tmxlite\\src\\detail\\*.cpp",
-                "-I", "D:\\Libraries and Tools\\SFML\\include",
-                "-I", "${workspaceFolder}\\tmxlite\\include",
+                "${workspaceFolder}/src/*.cpp",
+                "${workspaceFolder}/vendor/tmxlite/src/*.cpp",
+                "${workspaceFolder}/vendor/tmxlite/src/*.c",
+                "${workspaceFolder}/vendor/tmxlite/src/detail/*.cpp",
+                "-I", "D:/Libraries and Tools/SFML/include",
+                "-I", "${workspaceFolder}/vendor/tmxlite/include",
                 "-DTMXLITE_STATIC",
-                "-L", "D:\\Libraries and Tools\\SFML\\lib",
+                "-L", "D:/Libraries and Tools/SFML/lib",
                 "-lsfml-graphics",
                 "-lsfml-window",
                 "-lsfml-system",
                 "-o",
-                "${workspaceFolder}\\circle_fight.exe"
+                "${workspaceFolder}/bin/circle_fight.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}/bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -29,8 +30,8 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "Task biên dịch game."
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
