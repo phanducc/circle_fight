@@ -1,4 +1,4 @@
-# 🔴 Circle Fight - Đại Chiến Tròn Tròn
+# 🔴 Circle Fight
 
 Một tựa game 2D thể loại giải đố - vượt chướng ngại vật được viết hoàn toàn bằng **C++** và thư viện **SFML**. Dự án áp dụng kiến trúc Lập trình Hướng đối tượng (OOP) và sử dụng `tmxlite` để đọc bản đồ thiết kế từ phần mềm Tiled.
 
