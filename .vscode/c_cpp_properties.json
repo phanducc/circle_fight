@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:\\Libraries and Tools\\SFML\\include",
+                "${workspaceFolder}\\tmxlite\\include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "TMXLITE_STATIC"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "D:/Libraries and Tools/winlibs/mingw64MSVCRT/bin/g++.exe"
+        }
+    ],
+    "version": 4
+}

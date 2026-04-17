@@ -1,0 +1,36 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Game C++",
+            "command": "D:\\Libraries and Tools\\winlibs\\mingw64MSVCRT\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\*.cpp",
+                "${workspaceFolder}\\tmxlite\\src\\*.cpp",
+                "${workspaceFolder}\\tmxlite\\src\\*.c",
+                "${workspaceFolder}\\tmxlite\\src\\detail\\*.cpp",
+                "-I", "D:\\Libraries and Tools\\SFML\\include",
+                "-I", "${workspaceFolder}\\tmxlite\\include",
+                "-DTMXLITE_STATIC",
+                "-L", "D:\\Libraries and Tools\\SFML\\lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-o",
+                "${workspaceFolder}\\circle_fight.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
